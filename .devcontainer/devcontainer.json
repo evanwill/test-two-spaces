@@ -1,0 +1,11 @@
+{
+  "name": "CollectionBuilder",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "postCreateCommand": "bundle install",
+  "forwardPorts": [4000],
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "remoteUser": "vscode"
+}
